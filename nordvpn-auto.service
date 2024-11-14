@@ -1,0 +1,13 @@
+[Unit]
+Description=NordVPN Auto Connect Service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'if ! /usr/bin/nordvpn account &>/dev/null; then /usr/bin/nordvpn login --token "NORDVPN-TOKEN"; fi && /usr/bin/nordvpn set killswitch on && /usr/bin/nordvpn set cybersec on && /usr/bin/nordvpn set lan-discovery enable && /usr/bin/nordvpn set notify on && /usr/bin/nordvpn connect United_Kingdom'
+Environment="HOME=/home/user"
+RemainAfterExit=yes
+User=user
+
+[Install]
+WantedBy=multi-user.target
