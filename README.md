@@ -1,6 +1,12 @@
 NordVPN Auto-Connect Service for Qubes OS (sys-vpn)
 This service automates the connection to NordVPN in a sys-vpn qube using fedora-40-xfce as the template. It ensures that NordVPN is connected with specific security settings (killswitch, CyberSec, LAN discovery, and notifications) whenever the sys-vpn qube starts.
 
+Download and install the NordVPN Linux client by opening the terminal, writing the command below:
+
+sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
+
+Additionally, if you receive the following issue: Whoops! Permission denied accessing /run/nordvpn/nordvpnd.sock, all you need to do is write the following command: sudo usermod -aG nordvpn $USER and then reboot your device.
+
 Configuration Instructions:
 
 Create the Service File
