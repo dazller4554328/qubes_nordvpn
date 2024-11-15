@@ -17,7 +17,9 @@ sudo nano /etc/systemd/system/nordvpn-auto.service
 
 paste the contents of the nordvpn-auto.service:
 
-Replace "NORDVPN-TOKEN" with your actual NordVPN login token.
+Replace "NORDVPN-TOKEN" with your actual NordVPN login token. See link below to create Nordvpn token.
+
+https://support.nordvpn.com/hc/en-us/articles/20286980309265-How-to-use-a-token-with-NordVPN-on-Linux
 
 Activate the Service
 
