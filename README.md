@@ -1,3 +1,5 @@
+This is outdated use the new way here: https://github.com/dazller4554328/qubes-nordlynx
+
 NordVPN Auto-Connect Service for Qubes OS (sys-vpn)
 This service automates the connection to NordVPN in a sys-vpn qube using fedora-40-xfce as the template. It ensures that NordVPN is connected with specific security settings (killswitch, CyberSec, LAN discovery, and notifications) whenever the sys-vpn qube starts.
 
